@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <style>
+        .menu {
+            background-color: #ff0084;
+            width: 100%;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .menu  ul  li {
+            position: relative;
+            font-size: 20px;
+        }
+
+        .menu a {
+            padding: 10px 20px;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #eb6dba;
+        }
+
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+            background-color: #ff0b89;
+            width: 200px;
+            z-index: 1;
+            padding: 5px 10px;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://es.wix.com/">Inicio</a></li>
+            
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li><a href="https://es.wix.com/diseno/web">Diseño Web</a></li>
+                    <li><a href="https://es.wix.com/ecommerce/tienda-online">Tienda on-line</a></li>
+                    <li><a href="https://es.wix.com/start/crear-blog">Blog</a></li>
+                    <li><a href="https://es.wix.com/ai-website-builder">Sitio web con IA</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="https://es.wix.com/explore/websites/categories/portfolio">Portafolio</a></li>
+            
+            <li><a href="#">Contacto</a>
+            <ul>
+                <li><a href="https://www.facebook.com/wix">Facebook</a></li>
+                <li><a href="https://www.instagram.com/wix/?utm_source=ig_profile_share&igshid=2xnd9i992jdp">Instagram</a></li>
+                <li><a href="https://x.com/wix">"X" antes "Twitter"</a></li>
+                <li><a href="https://es.wix.com/about/contact-us">Mayor información</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+</body>
+</html>
